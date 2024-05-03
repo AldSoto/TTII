@@ -1,0 +1,23 @@
+.container {
+    margin-top: 20px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.columns {
+    display: flex;
+}
+
+.column {
+    padding: 10px;
+}
+
+.textarea {
+    width: 100%;
+}
+
+.button {
+    margin-right: 10px;
+}

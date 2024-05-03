@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Validación de Comandos de Ascensores</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Referencia al CSS -->
+    <script src="script.js"></script> <!-- Referencia al JavaScript -->
+</head>
+<body>
+    <div class="container">
+        <header class="has-text-centered">
+            <h1 class="title">Validación de Comandos de Ascensores</h1>
+            <p>Página para validar comandos y trabajar con archivos .txt</p>
+        </header>
+        
+        <div class="columns">
+            <div class="column is-one-quarter">
+                <button class="button is-info" onclick="mostrarAyuda()">Ayuda</button> 
+            </div>
+            <div class="column">
+                <div class="field">
+                    <label class="label">Texto de Comandos:</label>
+                    <div class="control">
+                        <textarea class="textarea" id="inputText" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-primary" onclick="validarTexto()">Validar</button> 
+                    </div>
+                    <div class="control">
+                        <button class="button is-success" onclick="descargarArchivo()" id="downloadBtn">Descargar Archivo</button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-warning" onclick="cargarArchivo()">Cargar Archivo</button> 
+                    </div>
+                    <div class="control">
+                        <button class="button is-danger" onclick="borrarTexto()">Borrar</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="resultArea"></div> <!-- Área para mostrar resultados -->
+    </div>
+</body>
+</html>
